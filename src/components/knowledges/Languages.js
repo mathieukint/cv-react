@@ -5,7 +5,7 @@ class Languages extends Component {
     
     state = {
         languages: [
-            {id: 1, value: "Java", xp:4},
+            {id: 1, value: "Java", xp:3},
             {id: 2, value: "JavaScript", xp:2},
             {id: 3, value: "HTML", xp:1},
             {id: 4, value: "CSS", xp:1},
