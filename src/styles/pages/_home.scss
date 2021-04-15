@@ -1,0 +1,92 @@
+.home {
+
+    .homeContent {
+        background: linear-gradient(131deg, $color-1 49%, rgb(158, 186, 218) 100%);
+        min-height: $minHeight;
+        width: 100%;
+        min-height: 500px;
+        border-radius: $borderRadius;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: inherit;
+            // background: url('../../media') no repeat center/cover;
+            z-index: -1;
+            filter: brightness(30%)
+        }
+
+        .content {
+            position: absolute;
+            top: 20%;
+            left:13%;
+            font-family: $font-0;
+
+            #name {
+                font-size: 5rem;
+                font-family: $font-0;
+                color: $white;
+                text-transform: uppercase;
+                text-shadow: 3px 6px 2px $color-6;
+            }
+
+            #title {
+                font-size: 5rem;
+                font-family: $font-0;
+                color: $white;
+                text-transform: uppercase;
+                text-shadow: 3px 6px 2px $color-6;
+                // font-size: 5rem;
+                // padding: 1.5rem 0 2rem;
+                // color: $color-2;
+                // text-shadow: 1px 4px 1px $color-6;
+            }
+
+            #presentation {
+                font-size: 1rem;
+                text-align: justify;
+                margin-right: 10rem;
+                padding: 1rem 0 4rem;
+                color: $white;
+            }
+
+            .pdf {
+                a {
+                    font-size: 1.5rem;
+                    background: $color-4;
+                    padding: 1rem 4rem;
+                    border-radius: $borderRadius;
+                    box-shadow: 0 5px 1px $color-6;
+                    transition: 0.2s ease;
+
+                    &:hover {
+                        background: $color-5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .homeContent {
+        margin: 0 !important;
+    }
+}
+
+@media screen {
+    .homeContent {
+        // &:after {
+        //     background: url('../../.jpg') no-repeat 60% 50%/cover !important;
+        // }
+        #name {
+            font-size: 3rem !important;
+        }
+        #title {
+            font-size: 3rem !important;//1.8rem
+        }
+    }
+}

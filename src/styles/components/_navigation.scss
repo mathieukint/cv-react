@@ -1,0 +1,189 @@
+.sidebar {
+    background-color: $color-1;
+    font-family: $font-0;
+    height: 100%;
+    min-height: $minHeight;
+    width: 264px;
+    border-radius: $borderRadius;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr 108px;
+    grid-template-areas: "1" "2" "3";
+
+    //---   zone 1   -----------------
+    .id {
+        grid-area: 1;
+        text-align: center;
+        user-select: none;
+        position: relative;
+
+        .idContent {
+            position: absolute;
+            bottom: 0;
+            top: 7%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+
+            #portrait {
+                border-radius: 11%;
+                box-shadow: 0 0 0 3px $white, 0 0 0 5px $color-3;
+            }
+
+            #cvName {
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                margin-top: 1.5rem;
+                color: $white;
+            }
+        }
+    }
+
+    //---   zone 2   -----------------
+    .navigation {
+        margin-top: 2rem;
+        grid-area: 2;
+        padding: 2rem 1rem;
+
+        ul {
+            height: 100%;
+            display: grid;
+            position: relative;
+
+            li {
+                padding: 1rem 0 1rem 0.4rem;
+                font-size: 1.3rem;
+
+                &:hover i {
+                    transform: scale(142%);
+                }
+
+                a {
+                    color: $white;
+                }
+
+                .navActive {
+                    color: lightcoral;
+                }
+
+                i {
+                    position: absolute;
+                    font-size: 1.50rem;
+                    transform: translateY(0px);
+                    transition: 0.2s ease;
+                }
+
+                span {
+                    margin-left: 2.7rem;
+                }
+            }
+        }
+    }
+
+    //---   zone 3   -----------------
+    .socialNetwork {
+        grid-area: 3;
+
+        ul {
+            display: flex;
+            width: 264px;
+            padding: 0 14px;
+            justify-content: space-between;
+
+            li {
+                font-size: 1.5rem;
+                background: lightgrey;
+                color: $color-1;
+                border-radius: 50%;
+                padding: 0.5rem 0.8rem;
+                transition: 0.3s;
+                cursor: pointer;
+
+                a:visited {
+                    color: $color-1;
+                }
+
+                &:nth-child(1) {
+                    padding: 0.5rem 0.85rem;
+                }
+
+                &:nth-child(4) {
+                    padding: 0.5rem 0.75rem;
+                }
+
+                &:hover {
+                    background: $color-4;
+                }
+            }
+        }
+
+        .signature {
+            margin-top: 2rem;
+            text-align: center;
+            letter-spacing: 0.1rem;
+            font-size: 0.7rem;
+
+            p {
+                color: lightgrey;
+
+                &:hover {
+                    color: $color-4;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and(max-width: 850px) {
+    .sidebar{
+        display: flex;
+        min-height: 50px;
+        margin-bottom: 0.3rem;
+        width: 100%;
+
+        .id, .socialNetwork {
+            display: none;
+        }
+
+        .navigation {
+            width: 100%;
+            margin-top: -0.1rem;
+            padding: 0.1rem 1rem;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    margin-left: 1.95rem !important;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .sidebar {
+        ul {
+            justify-content: space-around !important;
+            
+            li {
+                padding: 1rem 0 !important;
+            }
+
+            i {
+                font-size: 1.4rem !important;
+                transform: translateY(-3px) !important;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+
+}

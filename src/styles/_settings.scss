@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+$font-0: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+         sans-serif;
+$font-1: 'Nova Round', cursive;
+$font-2: 'Dosis', sans-serif;
+$font-3: 'Josefin Sans', serif;
+$font-4: 'Lato', sans-serif;
+
+$color-1: #033252f1;
+$color-2: #c4c4c4da;
+$color-3: #f08035;
+$color-4: #259ba3;
+$color-5: #35bdd4;
+$color-6: #0d233a;
+$color-7: #1f0849;
+$white: #fafafa;
+$black: #0f0f0f;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px;
+$minHeight: 95vh;
+
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1rem auto;
+    max-width: 1200px;
+    // font-family: $font-4;
+    color: $black;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+}
+
+a:visited {
+    color: $black;
+}
+
+.home, .knowledges, .portfolio, .contact {
+    display: flex;
+
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
+}
+.homeContent, .knowledgesContent, .portfolioContent, .contactContent {
+    margin-left: 0.4rem;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;
+    }
+}
+
