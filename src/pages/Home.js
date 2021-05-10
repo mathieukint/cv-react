@@ -7,7 +7,6 @@ const Home = () => {
             <Navigation />
             <div className="homeContent">
                 <div className="content">
-                    {/* <h1 id="name">Mathieu Kint</h1> */}
                     <h1 id="title"> Développeur Java Junior </h1>
                     <p id="presentation">
                         Développeur Java-JEE Junior, Docteur en Physique des milieux denses, 
@@ -18,14 +17,19 @@ const Home = () => {
                     <div className="pdf">
                         <a href="./media/mkint_CV_2021AVR.pdf" target="blank">Télécharger le CV en version pdf</a>
                     </div>
-                    {/* <br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/>
                     <div className="certificates">
-                        Certifications:
-                        <ul>
-                            <li> - Java Foundation</li>
-                            <li> - OPQUAST : Qualité Web</li>
-                        </ul>
-                    </div> */}
+                        <h1 id="titleCert">Certifications :</h1><br/>
+                        <ol>
+                            <li>
+                                <a id="file" href="./media/Certification_OPQUAST_WLEDT3-1.pdf" target="blank">
+                                    <i className="far fa-file-alt"></i> OPQUAST : Maîtrise de la qualité en projet Web
+                                </a>  
+                            </li>
+                            {/* <li> 2. Java Foundation</li> */}
+                        </ol>
+                    </div>
+                    
 
                 </div>
 

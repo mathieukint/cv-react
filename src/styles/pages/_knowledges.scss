@@ -48,7 +48,7 @@
                     color: $white;
     
                     span {
-                        width: 10%;
+                        width: 15%;
     
                         &:nth-child(2) {
                             text-align: center;
@@ -61,7 +61,7 @@
                         }
     
                         &:nth-child(2):before,
-                        &:nth-child(3):before {
+                        &:nth-child(3):before, {
                             content: ' ';
                             background: rgba(180, 179, 179, 0.5);
                             position: absolute;

@@ -12,6 +12,7 @@ export default class ProjectList extends Component {
         let {projects} = this.state;
         return (
             <div className="portfolioContent">
+
                 <ul className="radioDisplay">
 
                 </ul>
@@ -29,6 +30,7 @@ export default class ProjectList extends Component {
                         })
                     }
                 </div>
+
             </div>
         );
     }

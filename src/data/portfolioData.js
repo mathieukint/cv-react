@@ -3,7 +3,7 @@ export const portfolioData = [
         id: 1,
         name:"P1 - GoStyle - Application mobile de couponing par Code",
         languages:["TypeScript", "CSS"],
-        langIcons:'fab fa-css3-alt',
+        langIcons:['fab fa-css3-alt'],
         source:"",
         info:"",
         picture:"",
@@ -21,7 +21,7 @@ export const portfolioData = [
         id: 3,
         name:"P3 - Jeu ",
         languages:['Java', 'HTML', 'CSS'],
-        langIcons:'fab fa-css3-alt',
+        langIcons:['fab fa-css3-alt'],
         source:"https://github.com/mathieukint/GuessMyNumber",
         info:"",
         picture:"",
@@ -34,25 +34,7 @@ export const portfolioData = [
         source:"https://mathieukint.github.io/site_pizzeria/",
         info:"",
         picture:"",
-    },
-    {
-        id: 5,
-        name:"P5",
-        languages:"java",
-        langIcons:"ec",
-        source:"",
-        info:"",
-        picture:"",
-    },
-    {
-        id: 6,
-        name:"P6",
-        languages:"java",
-        langIcons:"ec",
-        source:"",
-        info:"",
-        picture:"",
-    },
+    }
 
 
 ]

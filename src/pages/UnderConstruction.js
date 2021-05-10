@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const NotFound = () => {
+const UnderConstruction = () => {
     return (
-        <div className="notFound">
-            <div className="notFoundContent">
+        <div className="underConstruction">
+            <div className="underConstructionContent">
                 <h3 id="message">
-                    <i className="fas fa-search" id="iconSearch"></i><br/>
-                    Cette page n'existe pas
+                    <i className="fas fa-cogs" id="iconCogs"></i><br/>
+                    Cette page est en travaux
                     <br/><br/>
                 </h3>
                 <NavLink exact to="/">
@@ -20,4 +20,4 @@ const NotFound = () => {
     );
 };
 
-export default NotFound;
+export default UnderConstruction;

@@ -4,15 +4,17 @@ class Project extends Component {
     
     
     render() {
+        // console.log(this.props);
         let {name, langIcons, source, info, picture} = this.props.item;
 
 
         return (
             <div className="project">
+                
                 <div className="icons">
-                    {/* {langIcons.map(
-                        icon => <i className={icon} key={icon}></i>
-                    )} */}
+                    {langIcons.map( icon =>
+                        <i className={icon} key={icon}></i>
+                    )}
                 </div>
                 <h3>{name}</h3>
                 <img src={picture} alt="" />
