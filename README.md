@@ -1,1 +1,1 @@
-CV déployer à l'adresse : https://mathieukint.github.io/cv-react/
+CV déployé à l'adresse : https://mathieukint.github.io/cv-react/
